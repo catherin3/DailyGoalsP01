@@ -22,8 +22,10 @@ public class Summary extends AppCompatActivity {
         //Get the textView object
         TextView tv1 = findViewById(R.id.textViewSummary);
 
-        tv1.setText("Read up on materials before class: "+ info[0]
-                    + "\n Arrive on time so as not to miss important part of the lesson: "+info[1]+ "\n Attempt the problem myself: "+info[2]+"\n Reflection: "+info[3] );
+        tv1.setText(info[0]+ ":"+ info[1]
+                    + "\n "+info[2]+": " +info[3]
+                    +"\n " + info[4] +": " +info[5]
+                    +"\n Reflection: "+info[6] );
 
         Button btnClose = findViewById(R.id.btnClose);
         btnClose.setOnClickListener(new View.OnClickListener() {

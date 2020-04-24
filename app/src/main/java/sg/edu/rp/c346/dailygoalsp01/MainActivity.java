@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,9 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 RadioButton rb3 = (RadioButton) findViewById(selectButtonId3);
 
                 EditText etReflect = (EditText) findViewById(R.id.editTextReflection);
+                TextView tv1 = (TextView) findViewById(R.id.textViewReadUp);
+                TextView tv2 = (TextView) findViewById(R.id.textViewArrive);
+                TextView tv3 = (TextView) findViewById(R.id.textViewAttempt);
 
-                
-               String[] info = {(String) rb.getText(), (String) rb2.getText(),(String) rb2.getText(),etReflect.getText().toString()};
+               String[] info = {tv1.getText().toString(),(String) rb.getText(),tv2.getText().toString() ,
+                               (String) rb2.getText(),tv3.getText().toString(),(String) rb3.getText(),etReflect.getText().toString()};
 
                 Intent i = new Intent(MainActivity.this, Summary.class);
 
